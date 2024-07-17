@@ -1,4 +1,4 @@
-#include "worksteal.c"
+#include "workstealing.c"
 
 #define N_THREADS 8
 

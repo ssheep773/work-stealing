@@ -4,7 +4,7 @@ LIBS = -lpthread
 
 all: main
 
-OBJS := worksteal-main.o
+OBJS := workstealing-main.o
 
 deps := $(OBJS:%.o=.%.o.d)
 
