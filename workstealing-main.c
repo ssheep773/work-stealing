@@ -1,4 +1,5 @@
 #include "workstealing.c"
+#include <unistd.h>
 
 #define N_THREADS 8
 
@@ -38,6 +39,7 @@ void *thread(void *payload)
                 stolen = steal(&thread_queues[i]);
                 if (stolen == ABORT) {
                     i--;
+                    usleep(1000);
                     continue; /* Try again at the same i */
                 } else if (stolen == EMPTY){
                     continue;
