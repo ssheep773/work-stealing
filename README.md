@@ -1,14 +1,17 @@
-# Work-Stealing 
+# Parallel Load Balancing with Work Stealing
 ### Project Description
 This project implements a work-stealing scheduler in C to calculate Fibonacci numbers using multiple threads. The scheduler dynamically balances the workload among threads, ensuring efficient use of computational resources.
 
 HackMD: https://hackmd.io/@sysprog/SJoqB8Y80
 
 ### Features
-Work Stealing: Threads can steal tasks from each other's queues to balance the workload dynamically.
-Multithreading: Utilizes the POSIX threads library (pthread) to run tasks concurrently.
-Atomic Operations: Ensures thread safety with atomic operations provided by the C11 standard.
-Dynamic Task Generation: Tasks for calculating Fibonacci numbers are generated dynamically and pushed into the work queues.
+1. **Work Stealing**: Threads can steal tasks from each other's work queues to balance the workload dynamically.
+
+2. **Multithreading**: Utilizes the POSIX threads library (pthread) to run tasks concurrently.
+
+3. **Atomic Operations**: Ensures thread safety with atomic operations provided by the C11 standard.
+
+4. **Dynamic Task Generation**: Tasks for calculating Fibonacci numbers are generated dynamically and pushed into the work queues.
 ### Getting Started
 #### Prerequisites
 GCC Compiler
@@ -22,7 +25,7 @@ sudo apt-get install gcc make
 Clone the repository
 ```
 git clone https://github.com/yourusername/work-stealing-scheduler.git
-cd work-stealing-scheduler
+cd work-stealing
 ```
 Compile the project using make:
 
