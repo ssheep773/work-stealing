@@ -24,7 +24,7 @@ sudo apt-get install gcc make
 #### Building the Project
 Clone the repository
 ```
-git clone https://github.com/yourusername/work-stealing-scheduler.git
+git clone https://github.com/ssheep773/work-stealing.git
 cd work-stealing
 ```
 Compile the project using make:
